@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
 
@@ -12,90 +13,94 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
 
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
         body {
-            color: white;
-            background: #121214;
+            color: #3E3540;
+            background: white;
             font-style: normal;
             font-family: 'Roboto', sans-serif;
-
-            margin: 0;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
         }
 
         header {
             width: 100%;
             display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-
-
-
-        h1 {
-            text-transform: uppercase;
-            margin: 0;
+            align-items: flex-start;
+            justify-content: space-between;
         }
 
         a {
-            display: flex;
-            align-items: center;
-            width: 250px;
-            height: 150px;
-
-            padding: 16px;
-            color: white;
             font-weight: bold;
-            text-align: left;
-
-            font-size: 18px;
-
-            border: none;
-            background: linear-gradient(110.84deg, #9466ff -8.82%, #6833e4 127.29%);
-            border-radius: 10px;
-            cursor: pointer;
+            color: #3E3540;
             text-decoration: none;
-
         }
 
-        p {
-            margin-top: 5px;
-            font-size: 14px;
-            font-weight: 300;
+        a:hover {
+            color: #F9C039;
         }
 
-        .container-buttons-discipline {
+
+        h3 {
+            font-size: 18px;
+        }
+
+        .bodyPrimary {
+            margin: 64px;
+        }
+
+        .logo {
+            color: #F9C039;
+        }
+
+        .menu {
             display: flex;
-
-
-            width: 100%;
-            flex-direction: column;
-            justify-content: space-between;
-            max-width: 1200px;
+            flex-direction: row;
         }
 
-        .p-discipline {
-            margin: auto;
+        .menuItem {
+            padding-inline: 32px;
         }
 
-        .div-buttons-discipline {
-            display: flex;
-            margin: auto;
-        }
-
-        .btn-my-discipline {
-            margin: 10px;
+        .nullItem {
+            width: 56px;
         }
     </style>
 
 </head>
 
-<body>
-    {%block 'body'%}{%endblock%}
+<body class="bodyPrimary">
+    <header>
+
+        <h2 class="logo">
+            Delivery</br>
+            NFT
+        </h2>
+        <div class="menu">
+            <p class="menuItem">
+                <a href="http://localhost:8000/">
+                    Início
+                </a>
+            </p>
+            <p class="menuItem">
+                <a href="http://localhost:8000/gallery/">
+                    Galeria
+                </a>
+            </p>
+            <p class="menuItem">
+                <a href="http://localhost:8000/developers/">
+                    Desenvolvedores
+                </a>
+            </p>
+        </div>
+        <div class="nullItem">
+        </div>
+
+    </header>
+
+    {%block 'body' %}{%endblock%}
 </body>
 
 </html>

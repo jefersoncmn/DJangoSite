@@ -1,20 +1,36 @@
-{%extends 'disciplina.html'%}
+<style>
+    .cardNFT {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        width: 200px;
+        height: 220px;
+        border-radius: 16px;
+        box-shadow: 0px 0px 20px 0px #08366433;
 
-{%block 'linkBack'%}<a href="http://localhost:8000/home/">voltar</a>{% endblock %}
+        margin: 16px;
+    }
 
-{%block 'title'%}Sistemas Inteligentes Aplicados{%endblock%}
+    .nameTruck {
+        padding-top: 16px;
+        padding-bottom: 16px;
 
-{%block 'titleBody'%}Sistemas Inteligentes Aplicados{%endblock%}
-{%block 'teacherName'%}Thiago Franca Naves{%endblock%}
+    }
+</style>
 
+{%extends 'base.html'%}
 
-{%block 'textObjetive'%} Apresentar aos discentes os conceitos de planejamento e resolução de problemas que envolvem
-conjuntos de ações e planos. Princípios de incerteza e uso de raciocínio probabilístico para problemas em ambientes
-incertos e com informação parcial. O uso de técnicas de tomada de decisão para ambientes variados, com junção de
-conceitos vistos previamente na disciplina. Explorar os paradigmas de aprendizado em inteligência artificial, explorando
-as principais técnicas e relacionando os diferentes paradigmas de aprendizado e tipos de problemas indicados para cada
-um. {%endblock%}
+{%block 'body'%}
 
+<body>
+    <!-- {%block 'linkBack'%}<a href="http://localhost:8000/ntf/{{truck.id}}">voltar</a>{% endblock %} -->
+    {% for truck in trucks %}
+    <div class="cardNFT">
+        <img src={{truck.image}} width="180" height="180">
+        <h3 class="nameTruck">{{truck.name}}</h3>
+    </div>
+    {% endfor %}
+</body>
 
-{%block 'textCourseSyllabus'%}Planejamento. Raciocínio incerto. Tomada de decisão. Aprendizagem. Aprendizagem Não
-Supervisionado. Aprendizagem por reforço.{%endblock%}
+{%endblock%}

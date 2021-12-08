@@ -20,6 +20,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('developers/', include('developers.urls')),
     path('gallery/', include('gallery.urls')),
-    path('home/', include('home.urls')),
+    path('', include('home.urls')),
     path('nft/', include('nft.urls')),
 ]
