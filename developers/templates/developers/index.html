@@ -1,7 +1,66 @@
+<style>
+    .developers {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .table {
+        display: flex;
+        flex-direction: row;
+        padding-top: 64px;
+    }
+
+    .column {
+        display: flex;
+        flex-direction: column;
+        padding-left: 64px;
+        padding-right: 64px;
+    }
+
+    img {
+        border-radius: 50%;
+        margin-bottom: 25px;
+    }
+
+    h1 {
+        font-size: 48px;
+    }
+
+    h2 {
+        font-size: 36px;
+    }
+</style>
+
 {%extends 'base.html'%}
 
 {%block 'body'%}
 
+<body>
+    <div class="developers">
+        <h1>Desenvolvedores</h1>
+        <div class="table">
 
+            <div class="column">
+                <a href="https://github.com/rafaelomodei/">
+                    <div class="developers">
+                        <img src="https://avatars.githubusercontent.com/u/16935702?v=4" width="180" height="180">
+                        <h2>Rafael Omodei</h2>
+                    </div>
+                </a>
+            </div>
+
+            <div class="column">
+                <a href="https://github.com/jefersoncmn">
+                    <div class="developers">
+                        <img src="https://avatars.githubusercontent.com/u/51566081?v=4" width="180" height="180">
+                        <h2>Jeferson C. Martin</h2>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+</body>
 
 {%endblock%}

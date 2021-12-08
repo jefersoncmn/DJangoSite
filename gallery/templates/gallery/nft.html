@@ -1,12 +1,87 @@
+<style>
+    .Nft {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .table {
+        display: flex;
+        flex-direction: row;
+        padding-top: 64px;
+    }
+
+    .column {
+        display: flex;
+        flex-direction: column;
+        padding-left: 64px;
+        padding-right: 64px;
+    }
+
+    .data {
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 32px;
+    }
+
+    h4 {
+        margin-right: 16px;
+    }
+
+    .horizontal_dotted_line {
+        border-bottom: 3px dashed #F9C039;
+        width: 127px;
+        transform: translateY(62px) rotate(90deg);
+
+    }
+</style>
+
+
 {%extends 'base.html'%}
 
 {%block 'body'%}
 
 <body>
+    <div class="Nft">
+        <img src="../{{image}}" width="380" height="380">
+        <h1>{{name}}</h1>
+        <h3>Preço: {{price}}</h3>
+        <img src=>
 
-    {{id}}
-    {{name}}
-
+        <div class="table">
+            <div class="column">
+                <div class="data">
+                    <h4>Tipo de transporte:</h4>
+                    <p>{{cargo_type}}</p>
+                </div>
+                <div class="data">
+                    <h4>Limite de carga:</h4>
+                    <p>{{cargo_type}}</p>
+                </div>
+                <div class="data">
+                    <h4>Quantidade de eixo:</h4>
+                    <p>{{axle}}</p>
+                </div>
+            </div>
+            <div display=flex; flex-direction=column;>
+                <div class="horizontal_dotted_line"></div>
+            </div>
+            <div class="column">
+                <div class="data">
+                    <h4>Velocidade máxima:</h4>
+                    <p>{{max_velocity}}</p>
+                </div>
+                <div class="data">
+                    <h4>Consumo médio:</h4>
+                    <p>{{average_consumption}}</p>
+                </div>
+                <div class="data">
+                    <h4>Nível de conforto:</h4>
+                    <p>{{comfort_level}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 {%endblock%}
