@@ -34,6 +34,14 @@
         transform: translateY(62px) rotate(90deg);
 
     }
+
+    h3 {
+        margin-right: 8px;
+    }
+
+    p {
+        margin-right: 5px;
+    }
 </style>
 
 
@@ -45,18 +53,22 @@
     <div class="Nft">
         <img src="../{{image}}" width="380" height="380">
         <h1>{{name}}</h1>
-        <h3>Preço: {{price}}</h3>
-        <img src=>
+        <div style="display: flex; flex-direction: row; margin-right: 16px; align-items: center;">
+            <h3>Preço: {{price}}</h3>
+            <img src="../../static/images/moeda.svg" width="35" height="35">
+        </div>
+
 
         <div class="table">
-            <div class="column">
+            <div class="column" style="align-items:end">
                 <div class="data">
                     <h4>Tipo de transporte:</h4>
                     <p>{{cargo_type}}</p>
                 </div>
                 <div class="data">
                     <h4>Limite de carga:</h4>
-                    <p>{{cargo_type}}</p>
+                    <p>{{cargo_limit}}</p>
+                    <p>Toneladas</p>
                 </div>
                 <div class="data">
                     <h4>Quantidade de eixo:</h4>
@@ -66,14 +78,16 @@
             <div display=flex; flex-direction=column;>
                 <div class="horizontal_dotted_line"></div>
             </div>
-            <div class="column">
+            <div class="column" style="align-items:start">
                 <div class="data">
                     <h4>Velocidade máxima:</h4>
                     <p>{{max_velocity}}</p>
+                    <p>km/h</p>
                 </div>
                 <div class="data">
                     <h4>Consumo médio:</h4>
                     <p>{{average_consumption}}</p>
+                    <p>Litros/km</p>
                 </div>
                 <div class="data">
                     <h4>Nível de conforto:</h4>

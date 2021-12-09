@@ -21,5 +21,4 @@ urlpatterns = [
     path('developers/', include('developers.urls')),
     path('gallery/', include('gallery.urls')),
     path('', include('home.urls')),
-    path('nft/', include('nft.urls')),
 ]

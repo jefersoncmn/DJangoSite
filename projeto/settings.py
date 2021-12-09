@@ -42,7 +42,6 @@ INSTALLED_APPS = [
     'developers.apps.DevelopersConfig',
     'gallery.apps.GalleryConfig',
     'home.apps.HomeConfig',
-    'nft.apps.NftConfig'
 ]
 
 MIDDLEWARE = [
