@@ -1,53 +1,10 @@
-<style>
-    .Nft {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .table {
-        display: flex;
-        flex-direction: row;
-        padding-top: 64px;
-    }
-
-    .column {
-        display: flex;
-        flex-direction: column;
-        padding-left: 64px;
-        padding-right: 64px;
-    }
-
-    .data {
-        display: flex;
-        flex-direction: row;
-        padding-bottom: 32px;
-    }
-
-    h4 {
-        margin-right: 16px;
-    }
-
-    .horizontal_dotted_line {
-        border-bottom: 3px dashed #F9C039;
-        width: 127px;
-        transform: translateY(62px) rotate(90deg);
-
-    }
-
-    h3 {
-        margin-right: 8px;
-    }
-
-    p {
-        margin-right: 5px;
-    }
-</style>
-
-
 {%extends 'base.html'%}
-
+{% load static%}
 {%block 'body'%}
+
+<head>
+    <link href="{% static 'nft.css'%}" rel="stylesheet">
+</head>
 
 <body>
     <div class="Nft">
