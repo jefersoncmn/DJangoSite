@@ -12,6 +12,7 @@ Tabela de conteúdos
 ### Sobre
 
 Esse é o segundo trabalho para matéria de Linguagens de Programação para Web. Realizado no ano de 2021.
+Esse trabalho é uma galeria que apresenta veículos que são NFTs de um tipo de jogo fictício. 
 
 ### Estudo
 
