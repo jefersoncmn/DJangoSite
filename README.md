@@ -1,4 +1,4 @@
-<h1 align="center">DJango Site</h1>
+<h1 align="center">Nft Trucks</h1>
 
 Tabela de conteúdos
 =================
@@ -9,10 +9,17 @@ Tabela de conteúdos
    * [Autores](#autores)
 <!--te-->
 
-### Sobre
 
-Esse é o segundo trabalho para matéria de Linguagens de Programação para Web. Realizado no ano de 2021.
-Esse trabalho é uma galeria que apresenta veículos que são NFTs de um tipo de jogo fictício. 
+### Sobre
+Nft Trucks é um site de galeria que apresenta veículos que são NFTs fictícias.
+O objetivo desse trabalho é aprender sobre desenvolvimento usando DJango.
+Esse é um trabalho para matéria de Linguagens de Programação para Web. Realizado no ano de 2021.
+
+<img src="./public/gallery_page.JPG" align="center"/>
+<p align="center">Galeria</p>
+<br>
+<img src="./public/nft_page.JPG"  align="center"/>
+<p align="center">Pagina do NFT</p>
 
 ### Estudo
 
