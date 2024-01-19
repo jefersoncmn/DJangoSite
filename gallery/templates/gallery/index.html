@@ -26,8 +26,12 @@
 </style>
 
 {%extends 'base.html'%}
-
+{% load static%}
 {%block 'body'%}
+
+<head>
+    <link href="{% static 'index.css'%}" rel="stylesheet">
+</head>
 
 <body>
     <div class="gallery">

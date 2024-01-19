@@ -1,13 +1,61 @@
+<style>
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .textLeft {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        height: 100%;
+    }
+
+    .mensage {
+        display: flex;
+        font-size: 96px;
+    }
+
+    .button {
+        background-color: #F9C039;
+        padding: 10px 35px 10px 35px;
+        border-radius: 32px;
+        text-decoration: none;
+        border: none;
+        font-weight: 900;
+        color: #3E3540;
+        cursor: pointer;
+        margin-top: 32px;
+    }
+
+    .button:hover {
+        color: #3E3540 !important;
+    }
+</style>
+
 {%extends 'base.html'%}
 
 {%block 'body'%}
-<header>
-    <!-- {%block 'linkBack'%}<a href="http://localhost:8000/home/">voltar</a>{% endblock %} -->
-
-</header>
-
 
 <body>
+
+    <div class="container">
+        <div class="textLeft">
+            <h1 class="mensage">
+                Desenvolva a<br>
+                sua frota!
+            </h1>
+
+            <a class="button" type="button" href="http://localhost:8000/gallery/">
+                VER GALERIA
+            </a>
+        </div>
+
+        <img src="../../static/images/home.png" width="35%" height="35%">
+    </div>
+
 
 </body>
 {%endblock%}
